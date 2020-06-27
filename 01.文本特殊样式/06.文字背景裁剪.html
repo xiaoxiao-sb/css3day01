@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            font-size: 80px;
+            font-weight: bold;
+            background-image: url("img/b.jpg");
+            background-repeat: no-repeat;
+
+            /*
+                文字背景裁剪
+            */
+            -webkit-background-clip: text;
+            /*文字使用透明色*/
+            color: transparent;
+            background-position: 0px -50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Hello World
+    </div>
+</body>
+</html>

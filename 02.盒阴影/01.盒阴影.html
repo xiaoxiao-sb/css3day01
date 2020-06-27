@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            margin: 150px auto 0px;
+            width: 200px;
+            height: 200px;
+            background: deeppink;
+        /*
+            盒子阴影
+            box-shadow: 水平方向偏移量，垂直方向的偏移量，模糊程度，扩展程度，颜色，是否为内阴影
+            扩展程度：扩展程度只改变阴影的大小，与盒子无关
+            inset:设置这个参数后 当前的阴影就为内阴影
+           注意问题：扩展程度可以为负值，但是模糊程度不可以
+                        阴影部分不会影响到其他元素的排列
+        */
+            /*box-shadow: 0px 0px 0px 0px blue;*/
+            box-shadow: 0px 200px 0px 0px blue;
+        }
+        #box2{
+            width: 200px;
+            height: 200px;
+            background: yellowgreen;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="box">box</div>
+<div id="box2"></div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

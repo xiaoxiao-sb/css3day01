@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 300px;
+            height: 300px;
+            /*background: pink;*/
+            /*线性渐变
+            background   background-image
+                渐变的本质就是 绘制背景图片
+                background-size
+                background-position
+                background-repeat
+                渐变都可以使用
+            */
+            /*
+                线性渐变 默认由上到下渐变（垂直的）
+            */
+            /*background-image: linear-gradient(deeppink,yellowgreen);*/
+            /*第一个参数可以指定方向*/
+            background-image: linear-gradient(to right,deeppink,yellowgreen);
+            background-image: linear-gradient(to top,deeppink,yellowgreen);
+            background-image: linear-gradient(to right top,deeppink,yellowgreen);
+            /*度的单位deg*/
+            background-image: linear-gradient(45deg,deeppink,yellowgreen);
+            background-image: linear-gradient(225deg,deeppink,yellowgreen);
+            /*设置多个颜色*/
+            /*
+                0%-10%:没有从0%开始设置颜色  就会用第一个颜色进行填充
+                10%-20%：red到yellowgreen进行渐变
+                20%-30%：yellowgreen到blue进行渐变
+                30%-40%：blue到deeppink进行渐变
+                40%-100% 之间没有设置其他的渐变   就由最后一个颜色进行填充
+            */
+            background-image: linear-gradient(red 10%,yellowgreen 20%,blue 30%,deeppink 40%);
+            background-image: linear-gradient(red 0%,yellowgreen 200px);
+            /*使用线性渐变实现纯色 色块*/
+            /*background-image: linear-gradient(red 50%,yellowgreen 100%);*/
+            background-image: linear-gradient(red 50%,yellowgreen 51%);
+            background-image: linear-gradient(red 50%,yellowgreen 50%);
+
+
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+</html>

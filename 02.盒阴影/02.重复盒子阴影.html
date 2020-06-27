@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        #box {
+            margin: 100px auto;
+            width: 100px;
+            height: 10px;
+            background: deeppink;
+            /*
+                重复盒子阴影
+                设置参数时可以设置几组阴影 中间用“，”隔开
+            */
+            box-shadow: 0px 20px 0px 0px deeppink,0px 40px 0px 0px deeppink,0px 60px 0px 0px deeppink;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>
